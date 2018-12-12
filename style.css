@@ -7,6 +7,44 @@ body {
   margin: 0;
 }
 
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #e81c4f;
+  text-decoration: none;
+  padding: 1em;
+  display: block;
+}
+
+a.dropdown-item {
+  padding: 0.5em 1em 0.5em 1em;
+}
+
+nav a:hover {
+  background-color: #f69bb0c2;
+  color: white;
+}
+
+.dropdown .dropdown-item {
+  display: flex;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top: 2px solid #f69bb0c4;
+  box-shadow: 0 8px 8px rgba(10, 10, 10, .1);
+}
+
+.projects-menu:hover .dropdown {
+  display: block;
+}
+
 header {
   background-color: #263d36;
   background-image: url("banner.jpg");
