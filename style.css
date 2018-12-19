@@ -90,6 +90,10 @@ h2 {
   padding-top: 1em;
 }
 
+p {
+  text-align: justify;
+}
+
 main a,
 footer a {
   color: #e81c4f;
