@@ -8,6 +8,32 @@ const projectsDropdownHTML = (projects) => {
   return result.join('\n')
 }
 
+const toPatternImage = (img) => {
+  if (img) {
+    return `<figure>
+  <img src="./${img.src}" alt="${img.alt}" width="300px" />
+</figure>`
+  }
+  return ''
+}
+
+const toFabricImages = (images) => {
+  const result = []
+  for (let img of images) {
+    result.push(toFabricImage(img))
+  }
+  return result.join('\n')
+}
+
+const toFabricImage = (img) => {
+  if (img) {
+    return `<figure>
+  <img src="./${img.src}" alt="${img.alt}" width="300px" />
+</figure>`
+  }
+  return ''
+}
+
 const toHTML = (projects, project) => {
   return `<!DOCTYPE html>
   <html lang="fr" dir="ltr">
@@ -43,9 +69,7 @@ const toHTML = (projects, project) => {
               <h3>Patron</h3>
               ${project.patternHTML}
             </div>
-            <figure>
-              <img src="./${project.patternImage.src}" alt="${project.patternImage.alt}" width="300px" />
-            </figure>
+            ${toPatternImage(project.patternImage)}
           </div>
         </section>
         <section class="fabric">
@@ -54,9 +78,9 @@ const toHTML = (projects, project) => {
               <h3>Tissu</h3>
               ${project.fabricHTML}
             </div>
-            <figure>
-              <img src="./${project.fabricImage.src}" alt="${project.fabricImage.alt}" width="300px" />
-            </figure>
+            <div class="images">
+              ${toFabricImages(project.fabricImages)}
+            </div>
           </div>
         </section>
         <section class="note">
