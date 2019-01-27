@@ -1,0 +1,4 @@
+[build]
+  base    = "."
+  command = "node src/generator.js"
+  publish = "public"

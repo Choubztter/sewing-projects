@@ -8,7 +8,7 @@ const projectsDropdownHTML = (projects) => {
   return result.join('\n')
 }
 
-const toPatternImage = (img) => {
+const toProjectImage = (img) => {
   if (img) {
     return `<figure>
   <img src="./${img.src}" alt="${img.alt}" width="300px" />
@@ -17,21 +17,10 @@ const toPatternImage = (img) => {
   return ''
 }
 
-const toFabricImages = (images) => {
-  const result = []
-  for (let img of images) {
-    result.push(toFabricImage(img))
-  }
-  return result.join('\n')
-}
-
-const toFabricImage = (img) => {
-  if (img) {
-    return `<figure>
-  <img src="./${img.src}" alt="${img.alt}" width="300px" />
-</figure>`
-  }
-  return ''
+const toProjectImages = (images) => {
+  return images
+    .map(img => toProjectImage(img))
+    .join('\n')
 }
 
 const toHTML = (projects, project) => {
@@ -69,7 +58,9 @@ const toHTML = (projects, project) => {
               <h3>Patron</h3>
               ${project.patternHTML}
             </div>
-            ${toPatternImage(project.patternImage)}
+            <div class="images">
+              ${toProjectImages(project.patternImages)}
+            </div>
           </div>
         </section>
         <section class="fabric">
@@ -79,7 +70,7 @@ const toHTML = (projects, project) => {
               ${project.fabricHTML}
             </div>
             <div class="images">
-              ${toFabricImages(project.fabricImages)}
+              ${toProjectImages(project.fabricImages)}
             </div>
           </div>
         </section>
