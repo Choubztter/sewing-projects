@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const projectsDropdownHTML = (projects) => {
   const result = []
   result.push('<div class="dropdown">')
@@ -6,21 +7,57 @@ const projectsDropdownHTML = (projects) => {
   }
   result.push('</div>')
   return result.join('\n')
+=======
+const toProjectsDropdown = (projects, status) => {
+  const projectLinks = projects
+    .filter(project => status && project.status && status === project.status)
+    .map(project => `<a class="dropdown-item" href="./projet-${project.code}1.html">${project.title}</a>`)
+    .join('\n')
+  return `<div class="dropdown">
+${projectLinks}
+</div>`
+}
+
+const toGarmentSection = (project) => {
+  if (project && project.garmentImages && project.garmentImages.length >= 1) {
+    return `<section class="garment">
+      <h3>Réalisation</h3>
+      <div class="images">
+        ${toProjectImages(project.garmentImages)}
+      </div>
+    </section>`
+  }
+  return ''
+>>>>>>> template
 }
 
 const toProjectImage = (img) => {
   if (img) {
+<<<<<<< HEAD
     return `<figure>
   <img src="./${img.src}" alt="${img.alt}" width="300px" />
+=======
+    return `<figure class="illustration">
+  <img src="./${img.src}" alt="${img.alt}" />
+>>>>>>> template
 </figure>`
   }
   return ''
 }
 
 const toProjectImages = (images) => {
+<<<<<<< HEAD
   return images
     .map(img => toProjectImage(img))
     .join('\n')
+=======
+  if (images) {
+    return images
+      .map(img => toProjectImage(img))
+      .join('\n')
+  }
+  return ''
+>>>>>>> template
 }
 
 const toHTML = (projects, project) => {
@@ -41,7 +78,15 @@ const toHTML = (projects, project) => {
       </div>
       <div class="projects-menu">
         <a href="#">Mes projets</a>
+<<<<<<< HEAD
         ${projectsDropdownHTML(projects)}
+=======
+        ${toProjectsDropdown(projects, 'wip')}
+      </div>
+      <div class="makings-menu">
+        <a href="#">Mes réalisations</a>
+        ${toProjectsDropdown(projects, 'finished')}
+>>>>>>> template
       </div>
     </nav>
     <header>
@@ -78,6 +123,10 @@ const toHTML = (projects, project) => {
           <h3>Notes</h3>
           ${project.notesHTML}
         </section>
+<<<<<<< HEAD
+=======
+        ${toGarmentSection(project)}
+>>>>>>> template
       </article>
     </main>
     <footer>Léa Rumiz - Retrouvez toutes mes créations sur <a href="https://www.instagram.com/lea_rmz/" target="_blank">Instagram</a> </footer>

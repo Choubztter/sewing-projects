@@ -45,6 +45,10 @@ nav a:hover {
   display: block;
 }
 
+.makings-menu:hover .dropdown {
+  display: block;
+}
+
 header {
   background-color: #263d36;
   background-image: url("banner.jpg");
@@ -114,6 +118,22 @@ section.pattern .infos,
 section.fabric .infos {
   min-width: 18em;
   margin-right: auto;
+}
+
+section.pattern .images img {
+  width: 300px;
+}
+
+section.fabric .images img {
+  width: 300px;
+}
+
+section.garment .images figure.illustration {
+  display: inline;
+}
+
+section.garment .images img {
+  max-height: 350px;
 }
 
 footer {

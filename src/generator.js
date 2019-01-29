@@ -3,6 +3,10 @@ const projects = []
 projects.push({
   file: 'projet-azara1.html',
   code: 'azara',
+<<<<<<< HEAD
+=======
+  status: 'wip',
+>>>>>>> template
   title: 'Jupe Azara',
   patternHTML: `<ul>
   <li>Nom : Azara</li>
@@ -35,6 +39,10 @@ projects.push({
 projects.push({
   file: 'projet-ernest1.html',
   code: 'ernest',
+<<<<<<< HEAD
+=======
+  status: 'wip',
+>>>>>>> template
   title: 'Manteau Ernest',
   patternHTML: `<ul>
       <li>Nom : Ernest</li>
@@ -72,6 +80,10 @@ projects.push({
 projects.push({
   file: 'projet-pyjama1.html',
   code: 'pyjama',
+<<<<<<< HEAD
+=======
+  status: 'finished',
+>>>>>>> template
   title: 'Christmas pyjamas',
   patternHTML: `<ul>
     <li>Haut : Plantain</li>
@@ -107,13 +119,29 @@ Très confortable. <br/><br/>
 Plantain : Comme d'habitude, des difficultés au montage de l'encolure > prendre le temps !
 La prochaine fois, essayer de réduire le décolleté.
 Un peu serré au niveau des bras, peut être à cause des motifs qui font perdre un peu en élasticité ?
+<<<<<<< HEAD
 `
+=======
+`,
+garmentImages: [{
+  src: 'realisation-pyjama1.jpg',
+  alt: 'Réalisation Christmas pyjamas'
+},
+{
+  src: 'realisation-pyjama2.jpg',
+  alt: 'Réalisation Christmas pyjamas'
+}],
+>>>>>>> template
 })
 
 // Sofia
 projects.push({
   code: 'sofia',
   file: 'projet-sofia1.html',
+<<<<<<< HEAD
+=======
+  status: 'finished',
+>>>>>>> template
   title: 'Blouse Sofia de Noël',
   patternHTML: `<ul>
     <li>Nom : Sofia</li>
@@ -147,6 +175,7 @@ projects.push({
     ➤ Les plis du devant qui finissent par créer beaucoup d'épaisseur avec les autres parties du patron. Il faut faire attention à ce que tous les bords soient bien alignés pour ne pas créer de trous à l'assemblage du liseré du bas. <br>
     ➤ Le tissu très glissant surtout en envers contre envers (faire un bâti)<br>
     ➤ Sens du tissu pour le velours. Mon liseré du bas est à rebrousse poil, pas très gênant mais un peu frustrant.
+<<<<<<< HEAD
   </p>`
 })
 
@@ -182,6 +211,18 @@ projects.push({
   notesHTML: ''
 })
 */
+=======
+  </p>`,
+  garmentImages: [{
+    src: 'realisation-sofia1.jpg',
+    alt: 'Réalisation Sofia'
+  },
+  {
+    src: 'realisation-sofia2.jpg',
+    alt: 'Réalisation Sofia'
+  }],
+})
+>>>>>>> template
 
 const projectTemplate = require('./project-template')
 //console.log(projectTemplate.toHTML(projects, projects[1]))
@@ -189,10 +230,30 @@ const projectTemplate = require('./project-template')
 const fs = require('fs')
 
 for (project of projects) {
+<<<<<<< HEAD
   console.log(project.code)
   fs.writeFileSync(`public/${project.file}`, projectTemplate.toHTML(projects, project))
 }
 
+=======
+  console.log(`generating ${project.code}...`)
+  fs.writeFileSync(`public/${project.file}`, projectTemplate.toHTML(projects, project))
+}
+
+const wipTotal = projects
+  .filter(project => project.status === 'wip')
+  .length
+
+const finishedTotal = projects
+  .filter(project => project.status === 'finished')
+  .length
+
+const total = projects.length
+console.log(`\n${total} projects generated.`)
+console.log(`${wipTotal} projects in progress and ${finishedTotal} finished project${finishedTotal <= 1 ? '' : 's'}.`)
+console.log('Well done Choubi!')
+
+>>>>>>> template
 /*
 pattern: [{
     key: 'Nom',
