@@ -1,26 +1,41 @@
-const projectsDropdownHTML = (projects) => {
-  const result = []
-  result.push('<div class="dropdown">')
-  for (let project of projects) {
-    result.push(`<a class="dropdown-item" href="./projet-${project.code}1.html">${project.title}</a>`)
+const toProjectsDropdown = (projects, status) => {
+  const projectLinks = projects
+    .filter(project => status && project.status && status === project.status)
+    .map(project => `<a class="dropdown-item" href="./projet-${project.code}1.html">${project.title}</a>`)
+    .join('\n')
+  return `<div class="dropdown">
+${projectLinks}
+</div>`
+}
+
+const toGarmentSection = (project) => {
+  if (project && project.garmentImages && project.garmentImages.length >= 1) {
+    return `<section class="garment">
+      <h3>Réalisation</h3>
+      <div class="images">
+        ${toProjectImages(project.garmentImages)}
+      </div>
+    </section>`
   }
-  result.push('</div>')
-  return result.join('\n')
+  return ''
 }
 
 const toProjectImage = (img) => {
   if (img) {
-    return `<figure>
-  <img src="./${img.src}" alt="${img.alt}" width="300px" />
+    return `<figure class="illustration">
+  <img src="./${img.src}" alt="${img.alt}" />
 </figure>`
   }
   return ''
 }
 
 const toProjectImages = (images) => {
-  return images
-    .map(img => toProjectImage(img))
-    .join('\n')
+  if (images) {
+    return images
+      .map(img => toProjectImage(img))
+      .join('\n')
+  }
+  return ''
 }
 
 const toHTML = (projects, project) => {
@@ -41,7 +56,11 @@ const toHTML = (projects, project) => {
       </div>
       <div class="projects-menu">
         <a href="#">Mes projets</a>
-        ${projectsDropdownHTML(projects)}
+        ${toProjectsDropdown(projects, 'wip')}
+      </div>
+      <div class="makings-menu">
+        <a href="#">Mes réalisations</a>
+        ${toProjectsDropdown(projects, 'finished')}
       </div>
     </nav>
     <header>
@@ -78,6 +97,7 @@ const toHTML = (projects, project) => {
           <h3>Notes</h3>
           ${project.notesHTML}
         </section>
+        ${toGarmentSection(project)}
       </article>
     </main>
     <footer>Léa Rumiz - Retrouvez toutes mes créations sur <a href="https://www.instagram.com/lea_rmz/" target="_blank">Instagram</a> </footer>
