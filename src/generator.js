@@ -167,7 +167,45 @@ projects.push({
   {
     src: 'realisation-sofia2.jpg',
     alt: 'Réalisation Sofia'
+  }]
+})
+
+// Bloom
+projects.push({
+  file: 'projet-bloom1.html',
+  code: 'bloom',
+  status: 'wip',
+  title: 'Sweat Bloom',
+  patternHTML: `<ul>
+      <li>Nom : Bloom</li>
+      <li>Type : Pull sweat</li>
+      <li>Editeur : <a href="http://www.lmvcollection.ovh/sweat-bloom/" target="_blank">La Maison Victor</a></li>
+      <li>Difficulté : ⚫⚫⚪⚪</li>
+    </ul>`,
+  patternImages: [{
+    src: 'patron-bloom1.jpg',
+    alt: 'Patron Bloom'
+  },
+  {
+    src: 'patron-bloom2.jpg',
+    alt: 'Patron Bloom'
   }],
+  fabricHTML: `<ul>
+      <li>Matière : Coton Molleton</li>
+      <li>Couleur : Noir/Lurex argent</li>
+      <li>Métrage : 130cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/molleton-sweat/11090-molleton-noir-lurex-argent.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-molleton-noir-lurex-argent1.jpg',
+      alt: 'Tissu molleton noir/argent'
+    },
+    {
+      src: 'tissu-molleton-noir-lurex-argent2.jpg',
+      alt: 'Tissu molleton noir/argent'
+    }
+  ],
+  notesHTML: ''
 })
 
 const projectTemplate = require('./project-template')
