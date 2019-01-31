@@ -287,6 +287,45 @@ projects.push({
   notesHTML: ''
 })
 
+// Ditte
+projects.push({
+  file: 'projet-ditte1.html',
+  code: 'ditte',
+  status: 'wip',
+  title: 'Robe Ditte',
+  patternHTML: `<ul>
+      <li>Nom : Ditte</li>
+      <li>Type : Robe</li>
+      <li>Editeur : <a href="http://www.lmvcollection.ovh/robe-ditte/" target="_blank">La Maison Victor</a></li>
+      <li>Numéro : Mars/Avris 2016</li>
+      <li>Difficulté : ⚫⚫⚫⚪</li>
+    </ul>`,
+  patternImages: [{
+    src: 'patron-ditte1.jpg',
+    alt: 'Patron Ditte'
+  },
+  {
+    src: 'patron-ditte2.jpg',
+    alt: 'Patron Ditte'
+  }],
+  fabricHTML: `<ul>
+      <li>Matière : Viscose</li>
+      <li>Couleur : Tartan vert/ocre/lurex argent</li>
+      <li>Métrage : 165cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/carreaux-vichy/11134-ecossais-lurex-vert-ocre.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-ecossais-lurex-vert-ocre1.jpg',
+      alt: 'Tissu tartan vert/ocre'
+    },
+    {
+      src: 'tissu-ecossais-lurex-vert-ocre2.jpg',
+      alt: 'Tissu tartan vert/ocre'
+    }
+  ],
+  notesHTML: ''
+})
+
 const projectTemplate = require('./project-template')
 //console.log(projectTemplate.toHTML(projects, projects[1]))
 
