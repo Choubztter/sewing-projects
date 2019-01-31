@@ -217,7 +217,7 @@ projects.push({
   title: 'Chemisier Bruna',
   patternHTML: `<ul>
       <li>Nom : Bruna</li>
-      <li>Type : Chemisier Bruna</li>
+      <li>Type : Chemisier</li>
       <li>Editeur : <a href="http://www.lmvcollection.ovh/chemisier-bruna/" target="_blank">La Maison Victor</a></li>
       <li>Numéro : Mars/Avril 2018</li>
       <li>Difficulté : ⚫⚫⚪⚪</li>
@@ -243,6 +243,45 @@ projects.push({
     {
       src: 'tissu-twill-gris-pois-or2.jpg',
       alt: 'Tissu twill gris/or'
+    }
+  ],
+  notesHTML: ''
+})
+
+// Kitty
+projects.push({
+  file: 'projet-kitty1.html',
+  code: 'kitty',
+  status: 'wip',
+  title: 'Blazer Kitty',
+  patternHTML: `<ul>
+      <li>Nom : Kitty</li>
+      <li>Type : Blazer</li>
+      <li>Editeur : <a href="http://www.lmvcollection.ovh/blazer-kitty/" target="_blank">La Maison Victor</a></li>
+      <li>Numéro : Novembre/Décembre 2017</li>
+      <li>Difficulté : ⚫⚫⚫⚪</li>
+    </ul>`,
+  patternImages: [{
+    src: 'patron-kitty1.jpg',
+    alt: 'Patron Kitty'
+  },
+  {
+    src: 'patron-kitty2.jpg',
+    alt: 'Patron Kitty'
+  }],
+  fabricHTML: `<ul>
+      <li>Matière : 95% Laine / 5% Cachemire</li>
+      <li>Couleur : Prince de Galles</li>
+      <li>Métrage : 170cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/tissus-lainage/11158-prince-de-galles-gris.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-prince-de-galles-gris1.jpg',
+      alt: 'Tissu Prince de Galles'
+    },
+    {
+      src: 'tissu-prince-de-galles-gris2.jpg',
+      alt: 'Tissu Prince de Galles'
     }
   ],
   notesHTML: ''
