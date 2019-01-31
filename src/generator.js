@@ -180,6 +180,7 @@ projects.push({
       <li>Nom : Bloom</li>
       <li>Type : Pull sweat</li>
       <li>Editeur : <a href="http://www.lmvcollection.ovh/sweat-bloom/" target="_blank">La Maison Victor</a></li>
+      <li>Numéro : Mai/Juin 2017</li>
       <li>Difficulté : ⚫⚫⚪⚪</li>
     </ul>`,
   patternImages: [{
@@ -208,6 +209,45 @@ projects.push({
   notesHTML: ''
 })
 
+// Bruna
+projects.push({
+  file: 'projet-bruna1.html',
+  code: 'bruna',
+  status: 'wip',
+  title: 'Chemisier Bruna',
+  patternHTML: `<ul>
+      <li>Nom : Bruna</li>
+      <li>Type : Chemisier Bruna</li>
+      <li>Editeur : <a href="http://www.lmvcollection.ovh/chemisier-bruna/" target="_blank">La Maison Victor</a></li>
+      <li>Numéro : Mars/Avril 2018</li>
+      <li>Difficulté : ⚫⚫⚪⚪</li>
+    </ul>`,
+  patternImages: [{
+    src: 'patron-bruna1.jpg',
+    alt: 'Patron Bruna'
+  },
+  {
+    src: 'patron-bruna2.jpg',
+    alt: 'Patron Bruna'
+  }],
+  fabricHTML: `<ul>
+      <li>Matière : Twill polyester/coton</li>
+      <li>Couleur : Gris/Pois dorés</li>
+      <li>Métrage : 125cm</li>
+      <li>Vendeur : <a href="https://https://www.cousette.com/tissu-pois/11045-twill-gris-pois-or.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-twill-gris-pois-or1.jpg',
+      alt: 'Tissu twill gris/or'
+    },
+    {
+      src: 'tissu-twill-gris-pois-or2.jpg',
+      alt: 'Tissu twill gris/or'
+    }
+  ],
+  notesHTML: ''
+})
+
 const projectTemplate = require('./project-template')
 //console.log(projectTemplate.toHTML(projects, projects[1]))
 
@@ -215,7 +255,7 @@ const fs = require('fs')
 
 for (project of projects) {
   console.log(`generating ${project.code}...`)
-  fs.writeFileSync(`public/${project.file}`, projectTemplate.toHTML(projects, project))
+  fs.writeFileSync(`${__dirname}/../public/${project.file}`, projectTemplate.toHTML(projects, project))
 }
 
 const wipTotal = projects
