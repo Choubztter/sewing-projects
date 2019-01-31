@@ -297,7 +297,7 @@ projects.push({
       <li>Nom : Ditte</li>
       <li>Type : Robe</li>
       <li>Editeur : <a href="http://www.lmvcollection.ovh/robe-ditte/" target="_blank">La Maison Victor</a></li>
-      <li>Numéro : Mars/Avris 2016</li>
+      <li>Numéro : Mars/Avril 2016</li>
       <li>Difficulté : ⚫⚫⚫⚪</li>
     </ul>`,
   patternImages: [{
@@ -321,6 +321,44 @@ projects.push({
     {
       src: 'tissu-ecossais-lurex-vert-ocre2.jpg',
       alt: 'Tissu tartan vert/ocre'
+    }
+  ],
+  notesHTML: ''
+})
+
+// Mélilot
+projects.push({
+  file: 'projet-melilot1.html',
+  code: 'melilot',
+  status: 'wip',
+  title: 'Chemise Mélilot',
+  patternHTML: `<ul>
+      <li>Nom : Mélilot</li>
+      <li>Type : Chemise</li>
+      <li>Editeur : <a href="https://shop.deer-and-doe.fr/fr/patrons-de-couture/29-patron-chemise-melilot.html" target="_blank">Cousette</a></li>
+      <li>Difficulté : ⚫⚫⚫⚫⚪</li>
+    </ul>`,
+  patternImages: [{
+    src: 'patron-melilot1.jpg',
+    alt: 'Patron Mélilot'
+  },
+  {
+    src: 'patron-melilot2.jpg',
+    alt: 'Patron Mélilot'
+  }],
+  fabricHTML: `<ul>
+      <li>Matière : Tencel</li>
+      <li>Couleur : Denim bleu/rayures blanches</li>
+      <li>Métrage : 150cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/viscose-tencel/9791-tencel-madison-raye.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-tencel-madison-raye1.jpg',
+      alt: 'Tissu Madison rayé'
+    },
+    {
+      src: 'tissu-tencel-madison-raye2.jpg',
+      alt: 'Tissu Madison rayé'
     }
   ],
   notesHTML: ''
