@@ -36,7 +36,7 @@ projects.push({
 projects.push({
   file: 'projet-ernest1.html',
   code: 'ernest',
-  status: 'wip',
+  status: 'finished',
   title: 'Manteau Ernest',
   patternHTML: `<ul>
       <li>Nom : Ernest</li>
@@ -67,7 +67,37 @@ projects.push({
       alt: 'Doublure pongé pêche'
     }
   ],
-  notesHTML: ''
+  notesHTML: `<p> Projet qui m'a pris beaucoup de temps, des erreurs à corriger et un mois de février anormalement chaud qui
+  ne m'a pas motivée à faire les dernières finitions.
+  </br> Ce modèle comprend de nombreuses pièces à dessiner, découper, thermocoller... De plus, mauvaise surprise : République
+  du Chiffon n'inclue pas les marges de couture sur ses patrons. Heureusement les différentes parties du patron ont des
+  formes assez simples, cela n'a donc pas été <em>trop</em> fastidieux.
+  </br> La technique de montage des poches donnée par RdC est inutilement compliqué et je l'ai trouvée moins propre. J'ai refais
+  les poches en utilisant la technique traditionnelle et cela a très bien marché.
+  </br> Pour la pose de la doublure, tout est bien expliqué dans la pas à pas de la veste Michelle. J'ai ainsi pu découvrir la technique
+  du "glaçage" qui consiste à fixer la doublure par une couture invisible dans les marges de couture.
+  </br> D'ailleurs, faire la doublure en premier est une bonne idée, cela permet de découvrir le montage avant de s'attaquer
+   vraiemnt au manteau, comme une sorte de toile.
+   </br>Je suis très contente du résultat final, la qualité du tissu est magnifique, il est hyper moelleux tout en restant léger,
+   il est assez large pour être bien confortable et permettre de porter des pulls larges en dessous maus ne fait pas nonplus
+   "oversized". Et les détails col claudine, coutures devant et plis dans le dos lui donnent une vraie originalité tout en
+   étant assez classique. </p>`,
+   garmentImages: [{
+     src: 'realisation-ernest1.jpg',
+     alt: 'Réalisation Ernest'
+   },
+   {
+     src: 'realisation-ernest2.jpg',
+     alt: 'Réalisation Ernest'
+   },
+   {
+     src: 'realisation-ernest3.jpg',
+     alt: 'Réalisation Ernest'
+   },
+   {
+     src: 'realisation-ernest4.jpg',
+     alt: 'Réalisation Ernest'
+   }]
 })
 
 // Pyjama

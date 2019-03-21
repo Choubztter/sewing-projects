@@ -77,6 +77,28 @@ main {
   max-width: 50em;
 }
 
+section.articles {}
+
+section.articles .project {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section.articles .project .illustration {
+  width: 400px;
+}
+
+section.articles .project .illustration img {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+section.articles .project .description {
+  flex: 1;
+  min-width: 250px;
+}
+
 main,
 footer {
   padding: 1em 1em;
