@@ -12,7 +12,7 @@ const toLatestProjects = (projects) => {
   return projects
     .map(project => `<a href="${project.link}"><div class="project">
             <div class="illustration">
-              <img src="${project.image}" />
+              <div class="image" style="background-image: url(${project.image})"></div>
             </div>
             <div class="description">
               <h3>${project.name}</h3>

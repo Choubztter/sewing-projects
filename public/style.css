@@ -86,6 +86,22 @@ section.articles a:hover {
   color: #e81c4f;
 }
 
+section.articles .project .illustration .image {
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+section.articles .project .illustration .image:hover {
+  transform: scale(1.2) rotate(-5deg);
+}
+
+section.articles .project .illustration .image {
+  transition: all .5s ease-in-out;
+}
+
 section.articles .project {
   display: flex;
   flex-wrap: wrap;
@@ -94,7 +110,9 @@ section.articles .project {
 
 section.articles .project .illustration {
   width: 400px;
+  height: 225px;
   margin-right: 1rem;
+  overflow: hidden;
 }
 
 section.articles .project .illustration img {
