@@ -204,7 +204,7 @@ projects.push({
 projects.push({
   file: 'projet-bloom1.html',
   code: 'bloom',
-  status: 'wip',
+  status: 'finished',
   title: 'Sweat Bloom',
   patternHTML: `<ul>
       <li>Nom : Bloom</li>
@@ -236,7 +236,20 @@ projects.push({
       alt: 'Tissu molleton noir/argent'
     }
   ],
-  notesHTML: ''
+  notesHTML: `<p>Modèle très facile et rapide à coudre.
+  <br>Je n'ia pas ajouté les deux fermetures éclair sur les côtés comme prévu dans la patron de La Maison Victor
+  pour plus de simplicité et par craibte 'abîmer les manches par frottement. Si je dois le refaire comme ça :
+  ajouter quelques centimètres de longueur au liseré du bas pour qu'il soit un peu moins serré au niveau des hanches.
+  <br> Modèle simple et agréable, dans un tissu très confort (même si'il peluche pas mal, j'espère que cela ira mieux après
+  quelques lavages.) </p>`,
+  garmentImages: [{
+    src: 'realisation-bloom1.jpg',
+    alt: 'Réalisation Bloom'
+  },
+  {
+    src: 'realisation-bloom2.jpg',
+    alt: 'Réalisation Bloom'
+  }]
 })
 
 // Bruna
