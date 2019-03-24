@@ -407,6 +407,29 @@ projects.push({
   notesHTML: ''
 })
 
+const latestProjects = []
+latestProjects.push({
+  image: './index-bloom.jpg',
+  name: 'Sweat Bloom',
+  link: './projet-bloom1.html',
+  description: 'Un modèle de sweat simplissime + un tissu complètement bling = le pull doudou idéal.'
+})
+latestProjects.push({
+  image: './index-ernest.jpg',
+  name: 'Manteau Ernest',
+  link: './projet-ernest1.html',
+  description: `Pour mon deuxième manteau, j'ai choisi d'associer le patron Ernest de République du Chiffon
+  à un magnifique tissu laine et cachemire. Une merveille !`
+})
+latestProjects.push({
+  image: './index-sofia.jpg',
+  name: 'Blouse Sofia',
+  link: './projet-sofia1.html',
+  description: 'Une jolie blouse cache-coeur La Maison Victor réalisée dans un velours vert sapin, la tenue idéale pour les fêtes !'
+})
+
+
+const indexTemplate = require('./index-template')
 const projectTemplate = require('./project-template')
 //console.log(projectTemplate.toHTML(projects, projects[1]))
 
@@ -416,6 +439,9 @@ for (project of projects) {
   console.log(`generating ${project.code}...`)
   fs.writeFileSync(`${__dirname}/../public/${project.file}`, projectTemplate.toHTML(projects, project))
 }
+
+console.log(`generating index...`)
+fs.writeFileSync(`${__dirname}/../public/index.html`, indexTemplate.toHTML(projects, latestProjects))
 
 const wipTotal = projects
   .filter(project => project.status === 'wip')

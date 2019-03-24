@@ -77,15 +77,24 @@ main {
   max-width: 50em;
 }
 
-section.articles {}
+section.articles a {
+  color: inherit;
+  text-decoration: none;
+}
+
+section.articles a:hover {
+  color: #e81c4f;
+}
 
 section.articles .project {
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 1rem;
 }
 
 section.articles .project .illustration {
   width: 400px;
+  margin-right: 1rem;
 }
 
 section.articles .project .illustration img {
@@ -97,6 +106,10 @@ section.articles .project .illustration img {
 section.articles .project .description {
   flex: 1;
   min-width: 250px;
+}
+
+section.articles .project .description h3 {
+  margin-top: 0;
 }
 
 main,
