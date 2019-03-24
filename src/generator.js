@@ -422,6 +422,13 @@ latestProjects.push({
   à un magnifique tissu laine et cachemire. Une merveille !`
 })
 latestProjects.push({
+  image: './index-pyjama.jpg',
+  name: 'Christmas Pyjamas',
+  link: './projet-pyjama1.html',
+  description: `Deux patrons gratuits associés à un jersey sucre d'orge kitsch à souhait, ajoutez y une petite
+  <em>cup of tea</em> et l'esprit de Noël est total !`
+})
+latestProjects.push({
   image: './index-sofia.jpg',
   name: 'Blouse Sofia',
   link: './projet-sofia1.html',
