@@ -11,6 +11,9 @@ ${projectLinks}
 const toLatestProjects = (projects) => {
   return projects
     .map(project => `<a href="${project.link}"><div class="project">
+            <div class="date">
+              ${project.date}
+            </div>
             <div class="illustration">
               <div class="image" style="background-image: url(${project.image})"></div>
             </div>
@@ -51,7 +54,7 @@ const toHTML = (projects, latestProjects) => {
       </h1>
     </header>
     <main>
-      <h2>Dernières réalisations</h2>
+      <h2 class="home">Dernières réalisations</h2>
       <section class="articles">
         ${toLatestProjects(latestProjects)}
       </section>

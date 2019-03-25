@@ -32,6 +32,60 @@ projects.push({
   notesHTML: ''
 })
 
+// Bloom
+projects.push({
+  file: 'projet-bloom1.html',
+  code: 'bloom',
+  status: 'finished',
+  title: 'Sweat Bloom',
+  patternHTML: `<ul>
+      <li>Nom : Bloom</li>
+      <li>Type : Pull sweat</li>
+      <li>Editeur : <a href="http://www.lmvcollection.ovh/sweat-bloom/" target="_blank">La Maison Victor</a></li>
+      <li>Numéro : Mai/Juin 2017</li>
+      <li>Difficulté : ⚫⚫⚪⚪</li>
+    </ul>`,
+  patternImages: [{
+      src: 'patron-bloom1.jpg',
+      alt: 'Patron Bloom'
+    },
+    {
+      src: 'patron-bloom2.jpg',
+      alt: 'Patron Bloom'
+    }
+  ],
+  fabricHTML: `<ul>
+      <li>Matière : Coton Molleton</li>
+      <li>Couleur : Noir/Lurex argent</li>
+      <li>Métrage : 130cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/molleton-sweat/11090-molleton-noir-lurex-argent.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-molleton-noir-lurex-argent1.jpg',
+      alt: 'Tissu molleton noir/argent'
+    },
+    {
+      src: 'tissu-molleton-noir-lurex-argent2.jpg',
+      alt: 'Tissu molleton noir/argent'
+    }
+  ],
+  notesHTML: `<p>Modèle très facile et rapide à coudre.
+  <br>Je n'ia pas ajouté les deux fermetures éclair sur les côtés comme prévu dans la patron de La Maison Victor
+  pour plus de simplicité et par craibte 'abîmer les manches par frottement. Si je dois le refaire comme ça :
+  ajouter quelques centimètres de longueur au liseré du bas pour qu'il soit un peu moins serré au niveau des hanches.
+  <br> Modèle simple et agréable, dans un tissu très confort (même si'il peluche pas mal, j'espère que cela ira mieux après
+  quelques lavages.) </p>`,
+  garmentImages: [{
+      src: 'realisation-bloom1.jpg',
+      alt: 'Réalisation Bloom'
+    },
+    {
+      src: 'realisation-bloom2.jpg',
+      alt: 'Réalisation Bloom'
+    }
+  ]
+})
+
 // Ernest
 projects.push({
   file: 'projet-ernest1.html',
@@ -82,22 +136,23 @@ projects.push({
    il est assez large pour être bien confortable et permettre de porter des pulls larges en dessous maus ne fait pas nonplus
    "oversized". Et les détails col claudine, coutures devant et plis dans le dos lui donnent une vraie originalité tout en
    étant assez classique. </p>`,
-   garmentImages: [{
-     src: 'realisation-ernest1.jpg',
-     alt: 'Réalisation Ernest'
-   },
-   {
-     src: 'realisation-ernest2.jpg',
-     alt: 'Réalisation Ernest'
-   },
-   {
-     src: 'realisation-ernest3.jpg',
-     alt: 'Réalisation Ernest'
-   },
-   {
-     src: 'realisation-ernest4.jpg',
-     alt: 'Réalisation Ernest'
-   }]
+  garmentImages: [{
+      src: 'realisation-ernest1.jpg',
+      alt: 'Réalisation Ernest'
+    },
+    {
+      src: 'realisation-ernest2.jpg',
+      alt: 'Réalisation Ernest'
+    },
+    {
+      src: 'realisation-ernest3.jpg',
+      alt: 'Réalisation Ernest'
+    },
+    {
+      src: 'realisation-ernest4.jpg',
+      alt: 'Réalisation Ernest'
+    }
+  ]
 })
 
 // Pyjama
@@ -114,14 +169,14 @@ projects.push({
     <li>Difficulté : ⚫⚫⚪⚪⚪</li>
   </ul>`,
   patternImages: [{
-    src: 'patron-plantain.jpg',
-    alt: 'Patron Plantain'
-  },
-  {
-    src: 'patron-pajama.jpg',
-    alt: 'Patron Pajama Pants'
-  }
-],
+      src: 'patron-plantain.jpg',
+      alt: 'Patron Plantain'
+    },
+    {
+      src: 'patron-pajama.jpg',
+      alt: 'Patron Pajama Pants'
+    }
+  ],
   fabricHTML: `<ul>
     <li>Matière : Jersey 76% Coton, 21% Pes, 3% EA </li>
     <li>Couleur/Motif : Gris/Sucres d'orge</li>
@@ -141,14 +196,15 @@ Plantain : Comme d'habitude, des difficultés au montage de l'encolure > prendre
 La prochaine fois, essayer de réduire le décolleté.
 Un peu serré au niveau des bras, peut être à cause des motifs qui font perdre un peu en élasticité ?
 `,
-garmentImages: [{
-  src: 'realisation-pyjama1.jpg',
-  alt: 'Réalisation Christmas pyjamas'
-},
-{
-  src: 'realisation-pyjama2.jpg',
-  alt: 'Réalisation Christmas pyjamas'
-}]
+  garmentImages: [{
+      src: 'realisation-pyjama1.jpg',
+      alt: 'Réalisation Christmas pyjamas'
+    },
+    {
+      src: 'realisation-pyjama2.jpg',
+      alt: 'Réalisation Christmas pyjamas'
+    }
+  ]
 })
 
 // Sofia
@@ -165,14 +221,14 @@ projects.push({
     <li>Difficulté : ⚫⚫⚪⚪</li>
   </ul>`,
   patternImages: [{
-    src: 'patron-sofia.jpg',
-    alt: 'Patron Sofia'
-  },
-  {
-    src: 'patron-sofia2.jpg',
-    alt: 'Patron Sofia'
-  }
-],
+      src: 'patron-sofia.jpg',
+      alt: 'Patron Sofia'
+    },
+    {
+      src: 'patron-sofia2.jpg',
+      alt: 'Patron Sofia'
+    }
+  ],
   fabricHTML: `<ul>
     <li>Matière : Velours polyester stretch</li>
     <li>Couleur : Vert sapin</li>
@@ -183,73 +239,21 @@ projects.push({
     src: '',
     alt: ''
   }],
-  notesHTML:
-  `<p>Modèle rapide à coudre (coupé et cousu aux 3/4 en un après-midi). Explications claires, patron bien pensé, comme souvent avec La Maison Victor. <br>
+  notesHTML: `<p>Modèle rapide à coudre (coupé et cousu aux 3/4 en un après-midi). Explications claires, patron bien pensé, comme souvent avec La Maison Victor. <br>
     <br>Difficultés : <br>
     ➤ Les plis du devant qui finissent par créer beaucoup d'épaisseur avec les autres parties du patron. Il faut faire attention à ce que tous les bords soient bien alignés pour ne pas créer de trous à l'assemblage du liseré du bas. <br>
     ➤ Le tissu très glissant surtout en envers contre envers (faire un bâti)<br>
     ➤ Sens du tissu pour le velours. Mon liseré du bas est à rebrousse poil, pas très gênant mais un peu frustrant.
   </p>`,
   garmentImages: [{
-    src: 'realisation-sofia1.jpg',
-    alt: 'Réalisation Sofia'
-  },
-  {
-    src: 'realisation-sofia2.jpg',
-    alt: 'Réalisation Sofia'
-  }]
-})
-
-// Bloom
-projects.push({
-  file: 'projet-bloom1.html',
-  code: 'bloom',
-  status: 'finished',
-  title: 'Sweat Bloom',
-  patternHTML: `<ul>
-      <li>Nom : Bloom</li>
-      <li>Type : Pull sweat</li>
-      <li>Editeur : <a href="http://www.lmvcollection.ovh/sweat-bloom/" target="_blank">La Maison Victor</a></li>
-      <li>Numéro : Mai/Juin 2017</li>
-      <li>Difficulté : ⚫⚫⚪⚪</li>
-    </ul>`,
-  patternImages: [{
-    src: 'patron-bloom1.jpg',
-    alt: 'Patron Bloom'
-  },
-  {
-    src: 'patron-bloom2.jpg',
-    alt: 'Patron Bloom'
-  }],
-  fabricHTML: `<ul>
-      <li>Matière : Coton Molleton</li>
-      <li>Couleur : Noir/Lurex argent</li>
-      <li>Métrage : 130cm</li>
-      <li>Vendeur : <a href="https://www.cousette.com/molleton-sweat/11090-molleton-noir-lurex-argent.html" target="_blank">Cousette</a></li>
-    </ul>`,
-  fabricImages: [{
-      src: 'tissu-molleton-noir-lurex-argent1.jpg',
-      alt: 'Tissu molleton noir/argent'
+      src: 'realisation-sofia1.jpg',
+      alt: 'Réalisation Sofia'
     },
     {
-      src: 'tissu-molleton-noir-lurex-argent2.jpg',
-      alt: 'Tissu molleton noir/argent'
+      src: 'realisation-sofia2.jpg',
+      alt: 'Réalisation Sofia'
     }
-  ],
-  notesHTML: `<p>Modèle très facile et rapide à coudre.
-  <br>Je n'ia pas ajouté les deux fermetures éclair sur les côtés comme prévu dans la patron de La Maison Victor
-  pour plus de simplicité et par craibte 'abîmer les manches par frottement. Si je dois le refaire comme ça :
-  ajouter quelques centimètres de longueur au liseré du bas pour qu'il soit un peu moins serré au niveau des hanches.
-  <br> Modèle simple et agréable, dans un tissu très confort (même si'il peluche pas mal, j'espère que cela ira mieux après
-  quelques lavages.) </p>`,
-  garmentImages: [{
-    src: 'realisation-bloom1.jpg',
-    alt: 'Réalisation Bloom'
-  },
-  {
-    src: 'realisation-bloom2.jpg',
-    alt: 'Réalisation Bloom'
-  }]
+  ]
 })
 
 // Bruna
@@ -266,13 +270,14 @@ projects.push({
       <li>Difficulté : ⚫⚫⚪⚪</li>
     </ul>`,
   patternImages: [{
-    src: 'patron-bruna1.jpg',
-    alt: 'Patron Bruna'
-  },
-  {
-    src: 'patron-bruna2.jpg',
-    alt: 'Patron Bruna'
-  }],
+      src: 'patron-bruna1.jpg',
+      alt: 'Patron Bruna'
+    },
+    {
+      src: 'patron-bruna2.jpg',
+      alt: 'Patron Bruna'
+    }
+  ],
   fabricHTML: `<ul>
       <li>Matière : Twill polyester/coton</li>
       <li>Couleur : Gris/Pois dorés</li>
@@ -305,13 +310,14 @@ projects.push({
       <li>Difficulté : ⚫⚫⚫⚪</li>
     </ul>`,
   patternImages: [{
-    src: 'patron-kitty1.jpg',
-    alt: 'Patron Kitty'
-  },
-  {
-    src: 'patron-kitty2.jpg',
-    alt: 'Patron Kitty'
-  }],
+      src: 'patron-kitty1.jpg',
+      alt: 'Patron Kitty'
+    },
+    {
+      src: 'patron-kitty2.jpg',
+      alt: 'Patron Kitty'
+    }
+  ],
   fabricHTML: `<ul>
       <li>Matière : 95% Laine / 5% Cachemire</li>
       <li>Couleur : Prince de Galles</li>
@@ -344,13 +350,14 @@ projects.push({
       <li>Difficulté : ⚫⚫⚫⚪</li>
     </ul>`,
   patternImages: [{
-    src: 'patron-ditte1.jpg',
-    alt: 'Patron Ditte'
-  },
-  {
-    src: 'patron-ditte2.jpg',
-    alt: 'Patron Ditte'
-  }],
+      src: 'patron-ditte1.jpg',
+      alt: 'Patron Ditte'
+    },
+    {
+      src: 'patron-ditte2.jpg',
+      alt: 'Patron Ditte'
+    }
+  ],
   fabricHTML: `<ul>
       <li>Matière : Viscose</li>
       <li>Couleur : Tartan vert/ocre/lurex argent</li>
@@ -382,13 +389,14 @@ projects.push({
       <li>Difficulté : ⚫⚫⚫⚫⚪</li>
     </ul>`,
   patternImages: [{
-    src: 'patron-melilot1.jpg',
-    alt: 'Patron Mélilot'
-  },
-  {
-    src: 'patron-melilot2.jpg',
-    alt: 'Patron Mélilot'
-  }],
+      src: 'patron-melilot1.jpg',
+      alt: 'Patron Mélilot'
+    },
+    {
+      src: 'patron-melilot2.jpg',
+      alt: 'Patron Mélilot'
+    }
+  ],
   fabricHTML: `<ul>
       <li>Matière : Tencel</li>
       <li>Couleur : Denim bleu/rayures blanches</li>
@@ -409,12 +417,14 @@ projects.push({
 
 const latestProjects = []
 latestProjects.push({
+  date: '24 mars 2019',
   image: './index-bloom.jpg',
   name: 'Sweat Bloom',
   link: './projet-bloom1.html',
   description: 'Un modèle de sweat simplissime + un tissu complètement bling = le pull doudou idéal.'
 })
 latestProjects.push({
+  date: '22 mars 2019',
   image: './index-ernest.jpg',
   name: 'Manteau Ernest',
   link: './projet-ernest1.html',
@@ -422,6 +432,7 @@ latestProjects.push({
   à un magnifique tissu laine et cachemire. Une merveille !`
 })
 latestProjects.push({
+  date: '5 janv. 2019',
   image: './index-pyjama.jpg',
   name: 'Christmas Pyjamas',
   link: './projet-pyjama1.html',
@@ -429,6 +440,7 @@ latestProjects.push({
   <em>cup of tea</em> et l'esprit de Noël est total !`
 })
 latestProjects.push({
+  date: '5 janv. 2019',
   image: './index-sofia.jpg',
   name: 'Blouse Sofia',
   link: './projet-sofia1.html',
