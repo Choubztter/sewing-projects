@@ -184,6 +184,7 @@ h2.home::before {
   z-index: 1;
   border-left-color: #fff;
   margin-top: -.25em;
+  border-right-width: 0;
 }
 
 h2.home::after {
@@ -195,6 +196,7 @@ h2.home::after {
   border-right-color: #fff;
   margin-top: -1.75em;
   right: 0;
+  border-left-width: 0;
 }
 
 p {
