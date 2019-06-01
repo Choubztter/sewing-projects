@@ -32,6 +32,71 @@ projects.push({
   notesHTML: ''
 })
 
+// Mélilot
+projects.push({
+  file: 'projet-melilot1.html',
+  code: 'melilot',
+  status: 'finished',
+  title: 'Chemise Mélilot',
+  patternHTML: `<ul>
+      <li>Nom : Mélilot</li>
+      <li>Type : Chemise</li>
+      <li>Editeur : <a href="https://shop.deer-and-doe.fr/fr/patrons-de-couture/29-patron-chemise-melilot.html" target="_blank">Cousette</a></li>
+      <li>Difficulté : ⚫⚫⚫⚫⚪</li>
+    </ul>`,
+  patternImages: [{
+      src: 'patron-melilot1.jpg',
+      alt: 'Patron Mélilot'
+    },
+    {
+      src: 'patron-melilot2.jpg',
+      alt: 'Patron Mélilot'
+    }
+  ],
+  fabricHTML: `<ul>
+      <li>Matière : Tencel</li>
+      <li>Couleur : Denim bleu/rayures blanches</li>
+      <li>Métrage : 150cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/viscose-tencel/9791-tencel-madison-raye.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-tencel-madison-raye1.jpg',
+      alt: 'Tissu Madison rayé'
+    },
+    {
+      src: 'tissu-tencel-madison-raye2.jpg',
+      alt: 'Tissu Madison rayé'
+    }
+  ],
+  notesHTML: `<p> Deuxième version de la chemise Mélilot manche longues.<br>
+  La réalisation m'a posée beaucoup moins de problèmes que la première fois,
+  je crois que les erreurs m'avaient frustrée au point de ne plus vouloir terminer ma chemise
+  (j'ai d'ailleurs attendu longtemps avant de la porter, aujourd'hui je l'aime finalement beaucoup malgré ses défauts!). <br>
+  J'ai choisi cette fois un tencel bleu avec de fines rayures blanches.
+  Ce tissu s'est avéré très facile à coudre et il est vraiment agréable à porter, doux, léger, le tencel est définitivement une matière
+  que j'adore (comme la viscose mais en plus il est écolo !). Le seul problème est que j'ai utilisé
+  un thermocollant trop épais ce qui rend les bracelets de manche et le col très rigides.
+  Visuellement ce n'est pas gênant mais ça m'embête un peu. Et à cause de ça j'ai râté ma boutonnière
+  de col mais je ne ferme jamais ce bouton alors ce n'est pas trop grave.
+  D'ailleurs je n'ai peu être pas choisi les bons boutons non plus, ils sont un peu trop larges,
+  mais la patte de boutonnage est recouverte donc on ne les vois pas beaucoup. <br>
+  Au final, quelques erreur dans le choix des fournitures qui empêche un rendu parfait de cette chemise mais cette fois
+  un réel plaisir à coudre cette nouvelle Mélilot. Une joli chemise avec un petit côté bleu de travail !</p>`,
+  garmentImages: [{
+      src: 'realisation-melilot1.jpg',
+      alt: 'Réalisation Mélilot'
+    },
+    {
+      src: 'realisation-melilot2.jpg',
+      alt: 'Réalisation Mélilot'
+    },
+    {
+      src: 'realisation-melilot3.jpg',
+      alt: 'Réalisation Mélilot'
+    }
+  ]
+})
+
 // Bloom
 projects.push({
   file: 'projet-bloom1.html',
@@ -381,72 +446,14 @@ projects.push({
   notesHTML: ''
 })
 
-// Mélilot
-projects.push({
-  file: 'projet-melilot1.html',
-  code: 'melilot',
-  status: 'finished',
-  title: 'Chemise Mélilot',
-  patternHTML: `<ul>
-      <li>Nom : Mélilot</li>
-      <li>Type : Chemise</li>
-      <li>Editeur : <a href="https://shop.deer-and-doe.fr/fr/patrons-de-couture/29-patron-chemise-melilot.html" target="_blank">Cousette</a></li>
-      <li>Difficulté : ⚫⚫⚫⚫⚪</li>
-    </ul>`,
-  patternImages: [{
-      src: 'patron-melilot1.jpg',
-      alt: 'Patron Mélilot'
-    },
-    {
-      src: 'patron-melilot2.jpg',
-      alt: 'Patron Mélilot'
-    }
-  ],
-  fabricHTML: `<ul>
-      <li>Matière : Tencel</li>
-      <li>Couleur : Denim bleu/rayures blanches</li>
-      <li>Métrage : 150cm</li>
-      <li>Vendeur : <a href="https://www.cousette.com/viscose-tencel/9791-tencel-madison-raye.html" target="_blank">Cousette</a></li>
-    </ul>`,
-  fabricImages: [{
-      src: 'tissu-tencel-madison-raye1.jpg',
-      alt: 'Tissu Madison rayé'
-    },
-    {
-      src: 'tissu-tencel-madison-raye2.jpg',
-      alt: 'Tissu Madison rayé'
-    }
-  ],
-  notesHTML: `<p> Deuxième version de la chemise Mélilot manche longues.<br>
-  La réalisation m'a posée beaucoup moins de problèmes que la première fois,
-  je crois que les erreurs m'avaient frustrée au point de ne plus vouloir terminer ma chemise
-  (j'ai d'ailleurs attendu longtemps avant de la porter, aujourd'hui je l'aime finalement beaucoup malgré ses défauts!). <br>
-  J'ai choisi cette fois un tencel bleu avec de fines rayures blanches.
-  Ce tissu s'est avéré très facile à coudre et il est vraiment agréable à porter, doux, léger, le tencel est définitivement une matière
-  que j'adore (comme la viscose mais en plus il est écolo !). Le seul problème est que j'ai utilisé
-  un thermocollant trop épais ce qui rend les bracelets de manche et le col très rigides.
-  Visuellement ce n'est pas gênant mais ça m'embête un peu. Et à cause de ça j'ai râté ma boutonnière
-  de col mais je ne ferme jamais ce bouton alors ce n'est pas trop grave.
-  D'ailleurs je n'ai peu être pas choisi les bons boutons non plus, ils sont un peu trop larges,
-  mais la patte de boutonnage est recouverte donc on ne les vois pas beaucoup. <br>
-  Au final, quelques erreur dans le choix des fournitures qui empêche un rendu parfait de cette chemise mais cette fois
-  un réel plaisir à coudre cette nouvelle Mélilot. Une joli chemise avec un petit côté bleu de travail !</p>`,
-  garmentImages: [{
-      src: 'realisation-melilot1.jpg',
-      alt: 'Réalisation Mélilot'
-    },
-    {
-      src: 'realisation-melilot2.jpg',
-      alt: 'Réalisation Mélilot'
-    },
-    {
-      src: 'realisation-melilot3.jpg',
-      alt: 'Réalisation Mélilot'
-    }
-  ]
-})
-
 const latestProjects = []
+latestProjects.push({
+  date: '1er juin 2019',
+  image: './index-melilot.jpg',
+  name: 'Chemise Mélilot',
+  link: './projet-melilot1.html',
+  description: 'Une chemise loose alliée à la fluidite et la douceur du tencel : combo gagnant !'
+})
 latestProjects.push({
   date: '24 mars 2019',
   image: './index-bloom.jpg',
@@ -477,6 +484,7 @@ latestProjects.push({
   link: './projet-sofia1.html',
   description: 'Une jolie blouse cache-coeur La Maison Victor réalisée dans un velours vert sapin, la tenue idéale pour les fêtes !'
 })
+
 
 
 const indexTemplate = require('./index-template')
