@@ -71,9 +71,9 @@ projects.push({
   ],
   notesHTML: `<p>Modèle très facile et rapide à coudre.
   <br>Je n'ia pas ajouté les deux fermetures éclair sur les côtés comme prévu dans la patron de La Maison Victor
-  pour plus de simplicité et par craibte 'abîmer les manches par frottement. Si je dois le refaire comme ça :
+  pour plus de simplicité et par crainte d'abîmer les manches par frottement. Si je dois le refaire comme ça :
   ajouter quelques centimètres de longueur au liseré du bas pour qu'il soit un peu moins serré au niveau des hanches.
-  <br> Modèle simple et agréable, dans un tissu très confort (même si'il peluche pas mal, j'espère que cela ira mieux après
+  <br> Modèle simple et agréable, dans un tissu très confort (même s'il peluche pas mal, j'espère que cela ira mieux après
   quelques lavages.) </p>`,
   garmentImages: [{
       src: 'realisation-bloom1.jpg',
@@ -236,9 +236,14 @@ projects.push({
     <li>Vendeur : <a href="https://www.rascol.com/A-272329-tissu-velours-stretch-vert-sapin.aspx" target="_blank">Rascol</a></li>
   </ul>`,
   fabricImages: [{
-    src: '',
-    alt: ''
-  }],
+      src: 'tissu-velours-sapin.jpg',
+      alt: 'Velours sapin'
+    },
+    {
+      src: 'tissu-velours-sapin2.jpg',
+      alt: 'Velours sapin'
+    }
+  ],
   notesHTML: `<p>Modèle rapide à coudre (coupé et cousu aux 3/4 en un après-midi). Explications claires, patron bien pensé, comme souvent avec La Maison Victor. <br>
     <br>Difficultés : <br>
     ➤ Les plis du devant qui finissent par créer beaucoup d'épaisseur avec les autres parties du patron. Il faut faire attention à ce que tous les bords soient bien alignés pour ne pas créer de trous à l'assemblage du liseré du bas. <br>
@@ -380,7 +385,7 @@ projects.push({
 projects.push({
   file: 'projet-melilot1.html',
   code: 'melilot',
-  status: 'wip',
+  status: 'finished',
   title: 'Chemise Mélilot',
   patternHTML: `<ul>
       <li>Nom : Mélilot</li>
@@ -412,7 +417,33 @@ projects.push({
       alt: 'Tissu Madison rayé'
     }
   ],
-  notesHTML: ''
+  notesHTML: `<p> Deuxième version de la chemise Mélilot manche longues.<br>
+  La réalisation m'a posée beaucoup moins de problèmes que la première fois,
+  je crois que les erreurs m'avaient frustrée au point de ne plus vouloir terminer ma chemise
+  (j'ai d'ailleurs attendu longtemps avant de la porter, aujourd'hui je l'aime finalement beaucoup malgré ses défauts!). <br>
+  J'ai choisi cette fois un tencel bleu avec de fines rayures blanches.
+  Ce tissu s'est avéré très facile à coudre et il est vraiment agréable à porter, doux, léger, le tencel est définitivement une matière
+  que j'adore (comme la viscose mais en plus il est écolo !). Le seul problème est que j'ai utilisé
+  un thermocollant trop épais ce qui rend les bracelets de manche et le col très rigides.
+  Visuellement ce n'est pas gênant mais ça m'embête un peu. Et à cause de ça j'ai râté ma boutonnière
+  de col mais je ne ferme jamais ce bouton alors ce n'est pas trop grave.
+  D'ailleurs je n'ai peu être pas choisi les bons boutons non plus, ils sont un peu trop larges,
+  mais la patte de boutonnage est recouverte donc on ne les vois pas beaucoup. <br>
+  Au final, quelques erreur dans le choix des fournitures qui empêche un rendu parfait de cette chemise mais cette fois
+  un réel plaisir à coudre cette nouvelle Mélilot. Une joli chemise avec un petit côté bleu de travail !</p>`,
+  garmentImages: [{
+      src: 'realisation-melilot1.jpg',
+      alt: 'Réalisation Mélilot'
+    },
+    {
+      src: 'realisation-melilot2.jpg',
+      alt: 'Réalisation Mélilot'
+    },
+    {
+      src: 'realisation-melilot3.jpg',
+      alt: 'Réalisation Mélilot'
+    }
+  ]
 })
 
 const latestProjects = []
