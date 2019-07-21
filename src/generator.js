@@ -406,26 +406,25 @@ projects.push({
   notesHTML: ''
 })
 
-// Ditte
+// Arum
 projects.push({
-  file: 'projet-ditte1.html',
-  code: 'ditte',
+  file: 'projet-arum1.html',
+  code: 'arum',
   status: 'wip',
-  title: 'Robe Ditte',
+  title: 'Robe Arum',
   patternHTML: `<ul>
-      <li>Nom : Ditte</li>
+      <li>Nom : Arum</li>
       <li>Type : Robe</li>
-      <li>Editeur : <a href="http://www.lmvcollection.ovh/robe-ditte/" target="_blank">La Maison Victor</a></li>
-      <li>Numéro : Mars/Avril 2016</li>
-      <li>Difficulté : ⚫⚫⚫⚪</li>
+      <li>Editeur : <a href="https://shop.deer-and-doe.fr/fr/patrons-de-couture/27-patron-robe-arum.html" target="_blank">Deer and Doe</a></li>
+      <li>Difficulté : ⚫⚫⚫⚫⚪</li>
     </ul>`,
   patternImages: [{
-      src: 'patron-ditte1.jpg',
-      alt: 'Patron Ditte'
+      src: 'patron-arum1.jpg',
+      alt: 'Patron Arum'
     },
     {
-      src: 'patron-ditte2.jpg',
-      alt: 'Patron Ditte'
+      src: 'patron-arum2.jpg',
+      alt: 'Patron Arum'
     }
   ],
   fabricHTML: `<ul>
