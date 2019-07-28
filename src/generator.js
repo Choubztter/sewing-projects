@@ -326,6 +326,73 @@ projects.push({
   ]
 })
 
+// Arum
+projects.push({
+  file: 'projet-arum1.html',
+  code: 'arum',
+  status: 'finished',
+  title: 'Robe Arum',
+  patternHTML: `<ul>
+      <li>Nom : Arum</li>
+      <li>Type : Robe</li>
+      <li>Editeur : <a href="https://shop.deer-and-doe.fr/fr/patrons-de-couture/27-patron-robe-arum.html" target="_blank">Deer and Doe</a></li>
+      <li>Difficulté : ⚫⚪⚪⚪⚪</li>
+    </ul>`,
+  patternImages: [{
+      src: 'patron-arum1.jpg',
+      alt: 'Patron Arum'
+    },
+    {
+      src: 'patron-arum2.jpg',
+      alt: 'Patron Arum'
+    }
+  ],
+  fabricHTML: `<ul>
+      <li>Matière : Viscose</li>
+      <li>Couleur : Tartan vert/ocre/lurex argent</li>
+      <li>Métrage : 165cm</li>
+      <li>Vendeur : <a href="https://www.cousette.com/carreaux-vichy/11134-ecossais-lurex-vert-ocre.html" target="_blank">Cousette</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-ecossais-lurex-vert-ocre1.jpg',
+      alt: 'Tissu tartan vert/ocre'
+    },
+    {
+      src: 'tissu-ecossais-lurex-vert-ocre2.jpg',
+      alt: 'Tissu tartan vert/ocre'
+    }
+  ],
+  notesHTML: `<p> J'avais au départ prévu de réaliser la robe Ditte de La Maison Victor avec un col 
+  chemise, une patte de boutonnage et une jupe froncée, mais j'ai eu un peu peur de louper mon 
+  <i> pattern matching </i> sur ce joli tartan, et j'avais de toute façon envie d'un modèle plus simple
+  et d'un projet facile. <br>
+  J'ai donc opté pour la robe Arum de Deer and Doe que j'avais déjà réalisée en jersey il y a quelques temps.
+  Une forme épurée, assez ample ce qui la rend vraiment confortable en cette période de canicule, mais
+  néanmoins très féminine avec ses découpes dans le dos. <br>
+  Pour le tissu, un twill de viscose très doux, fluide et léger, en tartan vert et ocre souligné d'un 
+  fil lurex argenté pour porter au et fort mon amour de l'Ecosse !<br>
+  Résultat une jolie robe ultra légère, très agréable pour l'été, mais qui sera aussi parfait pour le 
+  début de l'automne avec mon petit perfecto Mona de Make my Lemonade.
+  </p>`,
+  garmentImages: [{
+    src: 'realisation-arum1.jpg',
+    alt: 'Réalisation Arum'
+  },
+  {
+    src: 'realisation-arum2.jpg',
+    alt: 'Réalisation Arum'
+  },
+  {
+    src: 'realisation-arum3.jpg',
+    alt: 'Réalisation Arum'
+  },
+  {
+    src: 'realisation-arum4.jpg',
+    alt: 'Réalisation Arum'
+  }, 
+]
+})
+
 // Bruna
 projects.push({
   file: 'projet-bruna1.html',
@@ -360,6 +427,85 @@ projects.push({
     },
     {
       src: 'tissu-twill-gris-pois-or2.jpg',
+      alt: 'Tissu twill gris/or'
+    }
+  ],
+  notesHTML: ''
+})
+
+// Justine
+projects.push({
+  file: 'projet-justine1.html',
+  code: 'justine',
+  status: 'wip',
+  title: 'Jupe Justine',
+  patternHTML: `<ul>
+      <li>Nom : Justine</li>
+      <li>Type : Jupe</li>
+      <li>Editeur : <a href="https://www.readytosew.fr/store/robes-et-jupes/le-patron-gratuit-justine" target="_blank">Ready to sew</a></li>
+      <li>Difficulté : ⚫⚪⚪⚪</li>
+    </ul>`,
+  patternImages: [{
+      src: 'patron-justine1.jpg',
+      alt: 'Patron Justine'
+    },
+    {
+      src: 'patron-justine2.jpg',
+      alt: 'Patron Justine'
+    }
+  ],
+  fabricHTML: `<ul>
+      <li>Matière : Lin/Viscose</li>
+      <li>Couleur : Biscuit</li>
+      <li>Métrage : 200cm</li>
+      <li>Vendeur : <a href="https://prettymercerie.com/lin/6887-tissu-lin-et-viscose-biscuit.html" target="_blank">Pretty Mercerie</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-lin-et-viscose-biscuit1.jpg',
+      alt: 'Tissu lin/viscose biscuit'
+    },
+    {
+      src: 'tissu-lin-et-viscose-biscuit2.jpg',
+      alt: 'Tissu lin/viscose biscuit'
+    }
+  ],
+  notesHTML: ''
+})
+
+// Sunny
+projects.push({
+  file: 'projet-sunny1.html',
+  code: 'sunny',
+  status: 'wip',
+  title: 'Short Sunny',
+  patternHTML: `<ul>
+      <li>Nom : Sunny</li>
+      <li>Type : Short</li>
+      <li>Editeur : <a href="http://www.lmvcollection.ovh/short-sunset/" target="_blank">La Maison Victor</a></li>
+      <li>Numéro : Juillet/Août 2018</li>
+      <li>Difficulté : ⚫⚫⚪⚪</li>
+    </ul>`,
+  patternImages: [{
+      src: 'patron-sunny1.jpg',
+      alt: 'Patron Sunny'
+    },
+    {
+      src: 'patron-sunny2.jpg',
+      alt: 'Patron Sunny'
+    }
+  ],
+  fabricHTML: `<ul>
+      <li>Matière : Gabardine  65% Polyester 35% Coton</li>
+      <li>Couleur : Bleu marine</li>
+      <li>Métrage : 110cm</li>
+      <li>Vendeur : <a href="https://prettymercerie.com/gabardine/2884-tissu-gabardine-bleu-x-10cm.html" target="_blank">Pretty Mercerie</a></li>
+    </ul>`,
+  fabricImages: [{
+      src: 'tissu-gabardine-bleu1.jpg',
+      alt: 'Tissu twill gris/or'
+    },
+    {
+      src: 'tissu-gabardine-bleu2.jpg',
       alt: 'Tissu twill gris/or'
     }
   ],
@@ -406,46 +552,14 @@ projects.push({
   notesHTML: ''
 })
 
-// Arum
-projects.push({
-  file: 'projet-arum1.html',
-  code: 'arum',
-  status: 'wip',
-  title: 'Robe Arum',
-  patternHTML: `<ul>
-      <li>Nom : Arum</li>
-      <li>Type : Robe</li>
-      <li>Editeur : <a href="https://shop.deer-and-doe.fr/fr/patrons-de-couture/27-patron-robe-arum.html" target="_blank">Deer and Doe</a></li>
-      <li>Difficulté : ⚫⚫⚫⚫⚪</li>
-    </ul>`,
-  patternImages: [{
-      src: 'patron-arum1.jpg',
-      alt: 'Patron Arum'
-    },
-    {
-      src: 'patron-arum2.jpg',
-      alt: 'Patron Arum'
-    }
-  ],
-  fabricHTML: `<ul>
-      <li>Matière : Viscose</li>
-      <li>Couleur : Tartan vert/ocre/lurex argent</li>
-      <li>Métrage : 165cm</li>
-      <li>Vendeur : <a href="https://www.cousette.com/carreaux-vichy/11134-ecossais-lurex-vert-ocre.html" target="_blank">Cousette</a></li>
-    </ul>`,
-  fabricImages: [{
-      src: 'tissu-ecossais-lurex-vert-ocre1.jpg',
-      alt: 'Tissu tartan vert/ocre'
-    },
-    {
-      src: 'tissu-ecossais-lurex-vert-ocre2.jpg',
-      alt: 'Tissu tartan vert/ocre'
-    }
-  ],
-  notesHTML: ''
-})
-
 const latestProjects = []
+latestProjects.push({
+  date: '28 juil. 2019',
+  image: './index-arum.jpg',
+  name: 'Robe Arum',
+  link: './projet-melilot1.html',
+  description: 'Douceur, légèreté et Tartan... the perfect wee Scottish dress !'
+})
 latestProjects.push({
   date: '1er juin 2019',
   image: './index-melilot.jpg',
